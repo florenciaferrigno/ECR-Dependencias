@@ -5,7 +5,7 @@ CFGPARMS_XERCES="--prefix=/xerces"
 CFGPARMS_JANSON="--prefix=/jansson"
 
 export CXX_FLAGS=-m32
-export CFLAGS=-32
+export CFLAGS=-m32
 tar -xvf ECR-Dependencias/openssl-1.0.0e.tar.gz 
 cp -rf openssl-1.0.0e /openssl
 cd /openssl 
