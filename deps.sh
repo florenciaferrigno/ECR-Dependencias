@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CFGPARMS_SSL="--prefix=/openssl"
+CFGPARMS_SSL="--prefix=/openssl -m2 linux-generic32"
 CFGPARMS_XERCES="--prefix=/xerces"
 CFGPARMS_JANSON="--prefix=/jansson"
 
@@ -9,7 +9,7 @@ export CFLAGS=-m32
 tar -xvf ECR-Dependencias/openssl-1.0.0e.tar.gz 
 cp -rf openssl-1.0.0e /openssl
 cd /openssl 
-./config ${CFGPARMS_SSL} 
+./Configure ${CFGPARMS_SSL} 
 make -j4  
 make -j4 install
 cp /openssl/libssl.pc /usr/share/pkgconfig
