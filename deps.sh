@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CFGPARMS_SSL="--prefix=/openssl -m2 linux-generic32"
+CFGPARMS_SSL="--prefix=/openssl linux-generic32"
 CFGPARMS_XERCES="--prefix=/xerces"
 CFGPARMS_JANSON="--prefix=/jansson"
 
