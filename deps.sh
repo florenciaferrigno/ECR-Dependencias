@@ -7,15 +7,14 @@ CFGPARMS_JANSON="--prefix=/jansson"
 export CXXFLAGS=-m32
 export CFLAGS=-m32
 tar -xvf ECR-Dependencias/openssl-1.0.0e.tar.gz 
-cp -rf openssl-1.0.0e /openssl
-cd /openssl 
+cd openssl-1.0.0e 
 ./Configure ${CFGPARMS_SSL} 
 make -j4  
 make -j4 install
-cp /openssl/libssl.pc /usr/share/pkgconfig
-cp /openssl/libcrypto.pc /usr/share/pkgconfig
-cp /openssl/openssl.pc /usr/share/pkgconfig
-cd -
+cp libssl.pc /usr/share/pkgconfig
+cp libcrypto.pc /usr/share/pkgconfig
+cp openssl.pc /usr/share/pkgconfig
+cd ..
 tar -xvf ECR-Dependencias/jansson-2.7.tar.gz      
 cd jansson-2.7       
 ./configure ${CFGPARMS_JANSON}  
