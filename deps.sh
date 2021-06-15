@@ -30,4 +30,15 @@ make -j4
 make -j4 install 
 cp xerces-c.pc /usr/share/pkgconfig
 cd ..
+tar -xvf ECR-Dependencias/cmake-3.17.1.tar.gz
+cd cmake-3.17.1
+./bootstrap -- -DCMAKE_USE_OPENSSL=OFF
+make -j4 && make install
+tar -xvf ECR-Dependencias/cmake-3.17.1.tar.gz
+cd cmake-3.17.1
+./bootstrap -- -DCMAKE_USE_OPENSSL=OFF
+make -j4 && make install
+cd ..
+tar -xvf ECR-Dependencias/dockcross.tar.gz
+cp -rf dockcross /
 exit 0
