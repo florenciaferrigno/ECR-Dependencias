@@ -6,7 +6,7 @@ CFGPARMS_JANSON="--prefix=/jansson"
 
 export CXXFLAGS=-m32
 export CFLAGS=-m32
-tar -xvf ECR-Dependencias/openssl-1.0.0e.rar 
+tar -xvf ECR-Dependencias/openssl-1.0.0e.tar.gz 
 cd openssl-1.0.0e 
 ./Configure ${CFGPARMS_SSL} 
 make -j4  
