@@ -15,6 +15,7 @@ cp libssl.pc /usr/share/pkgconfig
 cp libcrypto.pc /usr/share/pkgconfig
 cp openssl.pc /usr/share/pkgconfig
 cd ..
+mv /openssl-1.0.0e /openssl
 tar -xvf ECR-Dependencias/jansson-2.7.tar.gz      
 cd jansson-2.7       
 ./configure ${CFGPARMS_JANSON}  
