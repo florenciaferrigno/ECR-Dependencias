@@ -37,4 +37,6 @@ make -j4 && make install
 cd ..
 tar -xvf ECR-Dependencias/dockcross.tar.gz
 cp -rf dockcross /
+cp -rf imagefiles/dockcross /dockcross/
+cp -rf imagefiles/entrypoint.sh  /dockcross/
 exit 0
